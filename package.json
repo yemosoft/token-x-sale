@@ -9,6 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "author": "yemosoft",
+  "license": "ISC",
+  "repository": "https://github.com/yemosoft/token-x-sale"
 }
