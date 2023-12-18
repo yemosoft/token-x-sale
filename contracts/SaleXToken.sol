@@ -26,14 +26,16 @@ contract SaleXToken is Ownable {
     mapping(address => uint) public amountSoled; // Total Soled For Wallet
     
     event Sold(address indexed purchaser, uint amount);
-    uint decimals = 6;
+    uint decimals = 18;
     
     constructor (
         uint _tokenPrice,
+        uint _decimals, // Add decimals parameter
         address _usdtContractAddress,
         address _tokenContractAddress
     ) public {
         TokenPrice = _tokenPrice;
+        decimals = _decimals; // Assign decimals value
         USDTContractAddress = _usdtContractAddress;
         TokenContractAddress = _tokenContractAddress;
         TotalSoled = 0;
